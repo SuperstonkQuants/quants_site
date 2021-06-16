@@ -72,20 +72,18 @@ strong {
 
 .social-links {
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 10rem;
+    flex-wrap: wrap;
     margin: 4rem 0 -2rem 0;
-    width: 100%;
 }
 
 .social-link {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 10rem;
-    min-width: 10rem;
     padding: 1rem;
     align-items: center;
     text-decoration: none;
@@ -95,9 +93,8 @@ strong {
 }
 
 .social-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px 0 var(--red);
-    border: 1px solid var(--red);
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 5px 10px 2px var(--red);
 }
 
 .social-icon {
