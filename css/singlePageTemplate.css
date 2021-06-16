@@ -89,7 +89,7 @@ strong {
     padding: 1rem;
     align-items: center;
     text-decoration: none;
-    border: 2px solid var(--dark);
+    border: 1px solid var(--dark);
     border-radius: 10px;
     transition: all 0.15s ease-in-out;
 }
