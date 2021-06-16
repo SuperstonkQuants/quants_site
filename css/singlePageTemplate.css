@@ -1,9 +1,24 @@
 @charset "UTF-8";
 
+:root {
+    --red: #9E0000;
+    --dark: black;
+    --light: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
 body {
     font-family: arial, serif;
-    background-color: black;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
     margin: 0;
     font-style: normal;
     font-weight: 200;
@@ -14,10 +29,9 @@ body {
 }
 
 .landing-header {
-    color: white;
+    color: var(--light);
     font-weight: bold;
     text-align: left;
-
 }
 
 .container {
@@ -34,8 +48,26 @@ body {
     max-width: 80vw;
 }
 
-.landing-content {
-    padding-right: 4rem;
+.about-header {
+    color: var(--red);
+    margin-bottom: 0;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transform: translateY(25px) translateX(-20px);
+    background-color: var(--dark);
+    width: max-content;
+}
+
+.indented-block {
+    margin: 0;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+strong {
+    font-weight: 600;
 }
 
 .social-links {
@@ -44,11 +76,12 @@ body {
     justify-content: space-around;
     min-width: 5rem;
     align-items: center;
+    margin-left: 4rem
 }
 
 .social-icon {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
 }
 
 .secondary-content {
@@ -60,8 +93,13 @@ ul {
     padding-left: 1rem;
 }
 
+li {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
 a {
-    color: white;
+    color: var(--light);
 }
 
 .mt-4 {
@@ -84,11 +122,12 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        height: 10rem
+        height: 10rem;
+        margin: 2rem 0 -2rem 0;
     }
 
     .social-icon {
-        height: 75px;
-        width: 75px;
+        height: 100px;
+        width: 100px;
     }
 }
