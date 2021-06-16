@@ -95,7 +95,7 @@ strong {
 }
 
 .social-link:hover {
-    transform: scale(1.05) translateY(-5px);
+    transform: translateY(-5px);
     box-shadow: 0 5px 10px 0 var(--red);
     border: 1px solid var(--red);
 }
